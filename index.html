@@ -828,15 +828,15 @@
 
                     <div class="col-lg-10 col-lg-push-1">
 
-                        <form method="post" action="send.php">
+                        <form method="post" action="https://mailservice-fjiwpafelu.now.sh">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 required">
-                                    <input type="text" class="form-control" name="firstname" required="required"
+                                    <input type="text" class="form-control" name="name" required="required"
                                            placeholder="Имя">
                                 </div>
 
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                    <input type="text" class="form-control" name="lastname"
+                                    <input type="text" class="form-control" name="surname"
                                            placeholder="Фамилия">
                                 </div>
                             </div>
@@ -852,7 +852,7 @@
 
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 required">
-                                        <textarea class="form-control form-textarea" name="question" required="required"
+                                        <textarea class="form-control form-textarea" name="text" required="required"
                                                   placeholder="Сообщение" rows="4"></textarea>
                                 </div>
                             </div>
@@ -939,7 +939,6 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="../js/libs/jquery.js"></script>
-<script src="../js/jquery.reject.js"></script>
 <script src="../bootstrap/js/bootstrap.min.js"></script>
 <script src="../js/libs/fancySelect.js"></script>
 <script src="../js/libs/jquery.smooth-scroll.min.js"></script>
@@ -965,27 +964,6 @@
         myPlacemark.balloon.open();
         myMap.behaviors.disable('drag');
     }
-</script>
-<script>
-    $(function () {
-        $.reject({
-            reject: {
-                safari: false,
-                chrome: false,
-                firefox: false,
-                msie: false,
-                opera: true,
-                konqueror: true,
-                unknown: true
-            },
-            close: false,
-            header: 'В данный момент поддержка вашего браузера не реализована',
-            paragraph1: 'Кроссбраузерное тестирование не проводилось',
-            paragraph2: 'Пожалуйста используйте указанный браузер',
-            closeMessage: 'После закрытия окна велика вероятность встретить деградацию дизайна',
-            display: ['chrome']
-        });
-    });
 </script>
 <script>
     document.getElementById('serts').onclick = function (event) {
